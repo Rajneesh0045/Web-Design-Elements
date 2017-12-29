@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <title>Web design Elements</title>
+    <link rel="stylesheet" href="style.css" media="screen" title="no title">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" media="all" onload="if(media!='all')media='all'" async="">
+  </head>
+  <body>
+    <div class="container">
+        
+
+      <div class="header">
+        <ul>
+          <li class="active"><a href="#icons"  class="nav-link">Icons</a></li>
+          <li><a href="#loaders" class="nav-link">Loaders</a></li>
+          <li><a href="#model" class="nav-link">Short Profile</a></li>
+          <li><a href="#price-cards" class="nav-link">Price cards</a></li>
+          <li><a href="#read-gradient" class="nav-link">Read Gradient</a></li>
+        </ul>
+      </div>
+
+      <div class="icon-set icon-set-1" id="icons">
+        <div class="icon">
+          <i class="fa fa-user" aria-hidden="true"></i>
+        </div>
+        <div class="icon">
+          <i class="fa fa-phone" aria-hidden="true"></i>
+        </div>
+        <div class="icon">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+        </div>
+        <div class="icon">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+        </div>
+        <div class="icon">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+        </div>
+        <div class="icon">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </div>
+      </div>
+
+
+      <div class="icon-set icon-set-2">
+        <div class="icon">
+          <i class="fa fa-user" aria-hidden="true"></i>
+        </div>
+        <div class="icon">
+          <i class="fa fa-phone" aria-hidden="true"></i>
+        </div>
+        <div class="icon">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+        </div>
+        <div class="icon">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+        </div>
+        <div class="icon">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+        </div>
+        <div class="icon">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </div>
+      </div>
+
+
+      <div class="the-para">
+        <span class="before"></span>
+        <span class="left"></span>
+        <p>Hover over them</p>
+        <span class="after"></span>
+        <span class="right"></span>
+      </div>
+
+
+      <div class="icon-set icon-set-3">
+        <div class="icon">
+          <span class="icon-tag"><p>User</p></span>
+          <div class="faIco"><i class="fa fa-user" aria-hidden="true"></i></div>
+        </div>
+        <div class="icon">
+          <span class="icon-tag"><p>Phone</p></span>
+          <div class="faIco"><i class="fa fa-phone" aria-hidden="true"></i></div>
+        </div>
+        <div class="icon">
+          <span class="icon-tag"><p>Mail</p></span>
+          <div class="faIco"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+        </div>
+        <div class="icon">
+          <span class="icon-tag"><p>Twitter</p></span>
+          <div class="faIco"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+        </div>
+        <div class="icon">
+          <span class="icon-tag"><p>Facebook</p></span>
+          <div class="faIco"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+        </div>
+        <div class="icon">
+          <span class="icon-tag"><p>Instagram</p></span>
+          <div class="faIco"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+        </div>
+      </div>
+
+      
+
+      <div id="loaders" class="loader loader-1">
+        <div></div>
+      </div>
+
+      <div class="loader loader-2">
+        <div id="r-1"></div>
+        <div id="r-2"></div>
+        <div id="circle"></div>
+      </div>
+
+      <div class="loader loader-3">
+        <div class="back-of-gooie">
+          <div class="the-goo-bar"></div>
+          <div class="the-goo-box" id="gooie-box"></div>
+        </div>
+        <span id="gooie-precent" style="font-size: 16px;font-family: cursive; color: white">0%</span>
+      </div>
+
+
+
+<!-- SVG Gooie -->
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+      <defs>
+        <filter id="goo">
+          <feGaussianBlur stdDeviation="10" in="SourceGraphic" result="blur" />
+          <feColorMatrix in="blur" mode="matrix" result="colormatrix"
+       type="matrix"
+       values="1 0 0 0 0
+               0 1 0 0 0
+               0 0 1 0 0
+               0 0 0 18 -7" />
+        </filter>
+        <feBlend in="SourceGraphic" in2="colormatrix" />
+      </defs>
+    </svg>
+<!-- SVG Gooie -->
+
+
+
+      <div class="model" id="model">
+      <div class="layer"></div>
+      <div id="close">x</div>
+        <div class="detail">
+          <img src="img/john1.jpg" alt="John Doe">
+          <div class="info">
+            <h2>John Doe</h2>
+            <p>John Doe is a web designer. He works at mirrorloops.</p>
+          </div>
+        </div>
+      </div>
+
+    <div class="profile">
+       <div class="pic">
+        <img src="img/john1.jpg">
+       </div> 
+      <div class="cont">
+         <h3>John Doe</h3>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+         tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+      <div class="send">
+        <i class="fa fa-paper-plane" aria-hidden="true"></i>
+      </div>
+    </div>
+
+
+    <div class="price-card-container" id="price-cards">
+     <div class="price-cards">
+       <div class="card card-1">
+         <img src="img/gamepad.png" alt="thing">
+         <h3>Lorem Ipsum</h3>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+         <div class="price"><span>$</span>25.00</div>
+       </div>
+       <div class="card card-2">
+         <img src="img/keyboard.png" alt="thing">
+         <h3>Lorem Ipsum</h3>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+         <div class="price"><span>$</span>37.50</div>
+       </div>
+       <div class="card card-3">
+         <img src="img/tablet.png" alt="thing">
+         <h3>Lorem Ipsum</h3>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+         <div class="price"><span>$</span>28.05</div>
+       </div>
+     </div>
+    </div>
+
+
+    <div class="dark-rect" id="read-gradient">
+      <div class="rect">
+        <div class="inner-rect">
+          <span class="inside-circles"></span>
+          <h1>This is the Lorem</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    </div>
+  </body>
+</html>
