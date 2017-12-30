@@ -342,33 +342,51 @@ body{
   /*border-left: 3px solid white;*/
   /*border-right: 3px solid white;*/
 }
+.loader-1{
+  justify-content: center;
+  width: 400px;
+  height: 200px;
+  filter:url("#goo");
+}
 
-.loader-1 div{
+.loader-1 .the-goo-box{
+  width: 70%;
+  height: 70%;
+  border-top: 15px solid white;
+  border-bottom: 10px solid white;  
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.loader-1 .the-goo-box div{
   background: white;
   width: 30px;
   height: 30px;
-  border-radius: 50%;
-  animation: Gooepen 1.4s ease-in-out 0s infinite;
+  animation: Gooependu 2s ease-in-out 0s infinite;
 }
 
-@keyframes Gooepen{
+@keyframes Gooependu{
   0%{
-    margin-left: 0%; 
-    width: 27px;
+    margin-bottom: 0%; 
   }
-  25%{
-    width: 60px;
+  10%{
+    margin-bottom: 2%;
   }
-  50%{
-    margin-left: 96%;
-    width: 27px;
+  30%{
+    margin-bottom: 40%;
   }
-  75%{
-    width: 45px;
+  60%{
+    margin-bottom: 35%;
+  }
+  65%{
+    margin-bottom: 35%;
+  }
+  80%{
+    margin-bottom: -5%;
   }
   100%{
-    margin-left: 0%;
-    width: 27px;
+    margin-bottom: 0%;
   }
 }
 
@@ -487,7 +505,7 @@ body{
   background: rgba(255,255,255,1);
   transform: translate(-50%,-50%);
 }
-.the-goo-box{
+.the-goo-diamond{
   top: 27%;
   left: 3%;
   position: absolute;
@@ -503,13 +521,11 @@ body{
 
 @keyframes loadit{
   0%{
-    /*transform-origin: bottom right;*/
     transform: rotate(45deg);
     margin-left: 0px;
   }
   20%{
     transform: rotate(70deg);
-    margin-left: 0px;
   }
   80%{
     transform: rotate(70deg);
@@ -732,6 +748,7 @@ body{
   align-items: center;
   overflow: hidden;
   box-shadow: inset 0px 0px 20px 10px rgba(0,0,0,0.3);
+  z-index: 0;
 }
 .dark-rect:before{
   position: absolute;
@@ -761,6 +778,7 @@ body{
   width: 1000px;
   background: linear-gradient(135deg, orangered,blue);
   box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.3);
+  z-index: 2;
 }
 
 .inner-rect{
