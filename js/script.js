@@ -54,8 +54,11 @@ $(window).scroll(function(){
 var gooieDiamond = document.getElementById('gooie-diamond');
 var gooiePercent = document.getElementById('gooie-percent');
 
-//var thePercent = (gooieBox.offsetLeft/3.74) ;
 
-//gooiePercent.innerHTML = thePercent;
+// while(gooieDiamond.offsetLeft < 374){
+	
+// 	var thePercent = (gooieDiamond.offsetLeft/3.74) ;
+// 	// gooiePercent.innerHTML = thePercent;
+// 	console.log(thePercent);
+// }
 
-console.log(gooieDiamond)
